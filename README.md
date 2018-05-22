@@ -18,16 +18,7 @@ The notebook contains sections about the following topics:
 
 <img src="domain.png" width="500"/>
 
-\begin{equation}
-\begin{aligned}
- \partial_t T -\nabla\cdot (\alpha({\textbf x},\omega)\nabla T) &= 0 & \text{ in } D\times(0,1]\times\Omega \ \\
- -\alpha({\textbf x},\omega)\ \nabla T\cdot \mathbf n &= 0 &\text{ in } \partial D_1\times(0,1]\times\Omega \ \\
- -\alpha({\textbf x},\omega)\ \nabla T\cdot \mathbf n &= -1 &\text{ in } \partial D_2\times(0,1]\times\Omega \ \\
- T({\textbf x},0,\omega) &= 0 &\text{ in } D\times\Omega
-\end{aligned}
-\end{equation}
-
-The problem describes the heat conduction in an electronic chip with the uncertain heat conductivity $\alpha$, modeled as a random field, discretized by means of a truncated Karhunen-Loève expansion with 3 uniformly distributed random variables. The figure shows the two-dimensional spatial domain $D$ of the chip. At the cavity a heat flux into the domain is assumed; the remaining boundary is assumed to be adiabatic and the initial temperature is set to 0. The governing equation is the unsteady heat equation subject to the boundary conditions just described, with temperature $T$, sample space $\Omega$, a sample $\omega$, time interval $(0,1]$, spatial points $\textbf x$, and $\mathbf n$ denotes the outer normal vector with respect to $D$. Adaptive anisotropic stochastic collocation on a sparse grid is applied to discretize the random space efficiently.
+The problem describes the heat conduction in an electronic chip with uncertain heat conductivity, modeled as a random field, discretized by means of a truncated Karhunen-Loève expansion with 3 uniformly distributed random variables. The figure shows the two-dimensional spatial domain D of the chip. At the cavity a heat flux into the domain is assumed; the remaining boundary is assumed to be adiabatic and the initial temperature is set to 0. The governing equation is the unsteady heat equation subject to the boundary conditions just described, and time running from 0 to 1. Adaptive anisotropic stochastic collocation on a sparse grid is applied to discretize the random space efficiently.
 
 ## How to use the model & explanation of all files
 
@@ -44,5 +35,7 @@ There are some computationally demanding steps involved. One is the random prepr
 
 The simulation runs on Linux and Mac systems, but not on a Windows system. For that some changes regarding file paths and system commands would be necessary.
 
+For an improved view please use the following nbviewer URL:
 
+https://nbviewer.jupyter.org/github/bschieche/MATLAB-random-PDE/blob/master/stochastic-collocation-heat-equation.ipynb
 
